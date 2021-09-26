@@ -9,6 +9,10 @@ require('dotenv').config();
     client.on('error', (err) => console.log('Redis Client Error'.white.bgRed.bold, err));
     await client.connect();
     console.log('📞 Redis Client Connected'.green);
+
+    await client.SELECT(process.env.REDIS_DB);
+    console.log(`🦘 Redis Database ${process.env.REDIS_DB} Selected`.green);
+
     const cmd = process.argv.slice(2)[0];
     let exercice=null;
     try{
