@@ -1,5 +1,5 @@
 # TP Redis
-
+A base code for the [Redis TP](https://course.larget.fr/2021-2022/b2-gobelins/bdd/tp/2-redis/)
 ## Requirements
 - NodeJS
 - Docker with Docker-compose
