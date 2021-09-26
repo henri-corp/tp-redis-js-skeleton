@@ -2,5 +2,13 @@
   "name": "redis_tp",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^10.0.0",
+    "redis": "^4.0.0-rc.2"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
 }
