@@ -7,3 +7,11 @@ services:
       - ./redis:/data
     ports:
       - "6379:6379"
+  redisAdmin:
+    image: erikdubbelboer/phpredisadmin
+    ports:
+      - "8080:80"
+    environment:
+      REDIS_1_HOST: redis
+      REDIS_1_PORT: 6379
+      REDIS_1_NAME: localhost

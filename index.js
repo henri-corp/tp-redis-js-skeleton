@@ -16,7 +16,8 @@ require('dotenv').config();
         console.log(`🦊 Exercice ${cmd} found`.green);
 
     }catch(error){
-        console.error(`😭 Cannot find ${cmd}.js in exercices`.white.bgRed.bold);
+        console.error(`😭 Cannot find ${cmd}.js in exercices or ${cmd} contains errors`.white.bgRed.bold);
+        console.debug(error);
         exit(100)    
     }
     console.log(`🍣 Starting ${cmd}`.green);
