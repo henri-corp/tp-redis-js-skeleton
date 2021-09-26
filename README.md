@@ -18,6 +18,7 @@ If you need a local redis server, simply run
 ```
 docker-compose up -d
 ```
+With docker comes also a phpRedisAdmin interface to check content of your redis interface. By default this interface is available at localhost:8080.
 
 ### Usage
 
